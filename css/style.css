@@ -7,7 +7,7 @@ a{color:var(--accent)}
 .site{width:100%;max-width:var(--max-width);margin:0 auto;padding:1.25rem;flex:1}
 
 /* Header */
-.site-header{background:var(--brand);color:#fff;padding:.9rem 1.25rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.site-header{background:var(--brand);color:#fff;padding:.9rem 1.25rem;display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:.75rem}
 .logo{width:72px;height:auto;background:#fff;padding:6px;border-radius:6px}
 .nav-list{display:flex;gap:1rem;list-style:none}
@@ -23,7 +23,7 @@ a{color:var(--accent)}
 .btn-alt{background:#fff;color:var(--brand);border:1px solid #e6eef9;margin-left:.6rem}
 
 /* Cards and layout */
-.card{background:var(--card);padding:1.25rem;border-radius:10px;margin:1rem 0;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+.card{background:var(--card);padding:1.25rem;border-radius:10px;margin:1rem 0;box-shadow:0 6px 18px rgba(2,6,23,0.04);align-items: center;justify-content: center;}
 .two-col{display:grid;grid-template-columns:1fr 320px;gap:1rem}
 .membership{width:100%;border-collapse:collapse}
 .membership th,.membership td{padding:.6rem;border:1px solid #e9eef5;text-align:left}
