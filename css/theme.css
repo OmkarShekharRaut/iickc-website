@@ -33,7 +33,7 @@ h1, h2, h3, .navbar-brand {
 
 /* HERO SECTION */
 .hero {
-  background: url("images/background.jpg") center/cover;
+  background: url("https://omkarshekharraut.github.io/iickc-website/images/background.jpg") center/cover;
   color: white;
   min-height: 80vh;
   display: flex;
