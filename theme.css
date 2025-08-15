@@ -1,0 +1,104 @@
+/* -----------------------------------
+   IICKC Website Theme Styles
+   Last Updated: Aug 15, 2025
+----------------------------------- */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+}
+h1, h2, h3, .navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+/* COLOR VARIABLES */
+:root {
+  --primary-color: #002855;
+  --secondary-color: #fbc02d;
+  --text-color: #333;
+}
+
+/* NAVBAR */
+.navbar {
+  background-color: var(--primary-color) !important;
+}
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+.navbar .nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+/* HERO SECTION */
+.hero {
+  background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1600&q=80') center/cover;
+  color: white;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero .btn-warning {
+  background-color: var(--secondary-color);
+  border: none;
+}
+.hero .btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+}
+
+/* SECTIONS */
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+/* SERVICES */
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* PARTNER LOGOS */
+.partner-logos img {
+  max-height: 50px;
+  margin: 10px;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+.partner-logos img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 0;
+}
+.footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* COUNTDOWN */
+#countdown {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
