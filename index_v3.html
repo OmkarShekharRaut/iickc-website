@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>India International Chamber of Knowledge and Commerce</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0;}
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f9fafb;
+    color: #1f2937;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .container {max-width: 1200px; margin: 0 auto; padding: 1.5rem 1rem 3rem; width: 95%;}
+  header {
+    background: #064e3b;
+    color: white;
+    padding: 1.5rem 1rem;
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  }
+  header .logo {display: flex; align-items: center; gap: 1rem;}
+  header .logo img {height: 50px;}
+  header h1 {
+    font-weight: 700; font-size: 1.5rem; color: #d1fae5; flex: 1 1 auto; min-width: 260px;
+  }
+  nav {margin-top: 0.5rem; width: 100%;}
+  nav ul {
+    list-style: none; display: flex; justify-content: flex-end; gap: 2rem; flex-wrap: wrap;
+  }
+  nav a {
+    color: #a7f3d0; font-weight: 600; text-decoration: none; font-size: 1rem;
+    padding: 0.25rem 0.5rem; border-radius: 4px;
+    transition: background .3s, color .3s;
+  }
+  nav a:hover, nav a:focus {background: #22c55e; color: white; outline: none;}
+  .hero {
+    background: url('https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg') no-repeat right center / 150px 100px,
+                url('https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg') no-repeat center center / contain;
+    padding: 4rem 1rem 6rem;
+    color: #064e3b;
+    display: flex; flex-direction: column; gap: 1.5rem;
+  }
+  .hero h2 {font-size: 2.2rem; max-width: 650px; font-weight: 700;}
+  .hero p {max-width: 650px; font-size: 1.125rem;}
+  main {flex: 1;}
+  section {margin-bottom: 3rem;}
+  h2 {
+    font-size: 1.75rem; color: #065f46; border-bottom: 3px solid #22c55e;
+    padding-bottom: 0.3rem; margin-bottom: 1rem; font-weight: 700;
+  }
+  ul {list-style: disc inside; font-size: 1.125rem; color: #334155;}
+  p {font-size: 1.125rem; color: #334155; margin-bottom: 1rem;}
+  .contact-info a {
+    color: white; background: #10b981;
+    padding: 0.6rem 1.25rem; border-radius: 6px; text-decoration: none; font-weight: 600;
+    margin-right: 1rem; display: inline-block; transition: background .3s;
+  }
+  .contact-info a:hover, .contact-info a:focus {background: #059669;}
+  footer {
+    background: #064e3b; color: #a7f3d0; text-align: center; padding: 1.5rem 1rem; font-size: 0.9rem;
+  }
+  @media (max-width: 900px) {
+    header {justify-content: center;}
+    nav ul {justify-content: center; gap: 1rem;}
+    .hero {background-position: right 10px center, center center; padding: 3rem 1rem 4rem; text-align: center;}
+    .hero h2, .hero p {max-width: 100%; margin: 0 auto;}
+  }
+  @media (max-width: 600px) {
+    header {flex-direction: column; align-items: center; text-align: center;}
+    header h1 {font-size: 1.25rem; margin-top: 0.25rem;}
+    .contact-info a {margin-bottom: 0.5rem; margin-right: 0; width: 100%; display: block; text-align: center;}
+  }
+</style>
+</head>
+<body>
+  <header class="container">
+    <div class="logo">
+      <img src="https://omkarshekharraut.github.io/iickc-website/images/iickc-logo.svg" alt="IICKC Logo" />
+      <h1>India International Chamber of Knowledge and Commerce</h1>
+    </div>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero container" aria-label="Introduction section">
+    <h2>Empowering Global Business Knowledge and Collaboration</h2>
+    <p>Uniting Indian enterprises with international markets through expertise, insights, and strategic partnerships.</p>
+  </section>
+
+  <main class="container">
+    <section id="about" tabindex="0">
+      <h2>About Us</h2>
+      <p>The India International Chamber of Knowledge and Commerce is dedicated to fostering business knowledge, networking, and collaboration across global markets. We empower businesses with insights, resources, and international connections to grow sustainably and competitively.</p>
+    </section>
+
+    <section id="services" tabindex="0">
+      <h2>Our Services</h2>
+      <ul>
+        <li>International trade facilitation and consulting</li>
+        <li>Knowledge workshops and training programs</li>
+        <li>Business networking events and expos</li>
+        <li>Market research and business intelligence</li>
+      </ul>
+    </section>
+
+    <section id="contact" tabindex="0">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <a href="mailto:info@iickc.org" aria-label="Email India International Chamber">info@iickc.org</a>
+        <a href="tel:+911234567890" aria-label="Call India International Chamber">+91 12345 67890</a>
+      </div>
+      <p>123 Business Avenue, New Delhi, India</p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 India International Chamber of Knowledge and Commerce
+  </footer>
+</body>
+</html>
