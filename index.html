@@ -2,54 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IICKC – Fostering Global Trade</title>
-  
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
-  
-  <!-- AOS Animation CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IICKC – Complete Website</title>
 
-  <!-- Theme CSS -->
-  <link rel="stylesheet" href="css/theme.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+  <!-- Bootstrap icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="css/theme_v5.css" />
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" aria-label="Primary navigation">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="#">
-<!--  	<img src="logo.png" alt="IICKC Logo" height="40" class="me-2" style="max-height:40px;"> -->
   	<span>India International Chamber Of Knowledge and Commerce</span>
     </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
-        <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      <ul class="navbar-nav ms-auto" role="menubar">
+        <li class="nav-item" role="none"><a class="nav-link" href="#services" role="menuitem">Services</a></li>
+        <li class="nav-item" role="none"><a class="nav-link" href="#about" role="menuitem">About</a></li>
+        <li class="nav-item" role="none"><a class="nav-link" href="#membership" role="menuitem">Membership</a></li>
+        <li class="nav-item" role="none"><a class="nav-link" href="#events" role="menuitem">Events</a></li>
+        <li class="nav-item" role="none"><a class="nav-link" href="#resources" role="menuitem">Resources</a></li>
+        <li class="nav-item" role="none"><a class="nav-link" href="#partners" role="menuitem">Partners</a></li>
+        <li class="nav-item" role="none"><a class="nav-link" href="#contact" role="menuitem">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <!-- Hero Section -->
-<section class="hero">
+<section class="hero" id="top" role="banner" aria-label="Hero banner with headline and call to action">
   <div class="container" data-aos="fade-up">
-</br>
-<!--    <a class="navbar-brand d-flex align-items-center" href="#"> -->
+    </br>
   	<img src="images/logo_transparent.png" alt="IICKC Logo" height="240" class="me-2" style="max-height:240px;">
-<!--    </a> --></br> </br></br></br></br>
-
+    </br> </br></br></br></br>
     <h1 class="fw-bold">Fostering Global Trade Through Knowledge Partnerships</h1>
     <p class="mt-3 fs-5">Empowering businesses with insights, international networks, and trade facilitation support.</p>
     <a class="btn btn-warning btn-lg m-2" href="#services">Explore Services</a>
@@ -57,31 +55,31 @@
   </div>
 </section>
 
-<!-- Services -->
-<section id="services">
+<!-- Services Section -->
+<section id="services" role="region" aria-labelledby="servicesHeading">
   <div class="container text-center" data-aos="fade-up">
-    <h2 class="mb-4">Our Key Services</h2>
-    <div class="row g-4">
+    <h2 id="servicesHeading" class="mb-4">Our Key Services</h2>
+    <div class="row g-4 justify-content-center">
       <div class="col-md-3 col-6">
-        <div class="card service-card p-3">
+        <div class="card service-card p-3" tabindex="0" aria-label="Trade Missions service">
           <div class="fs-1">🌏</div>
           <h5 class="mt-3">Trade Missions</h5>
         </div>
       </div>
       <div class="col-md-3 col-6">
-        <div class="card service-card p-3">
+        <div class="card service-card p-3" tabindex="0" aria-label="Government Schemes Guidance service">
           <div class="fs-1">📑</div>
           <h5 class="mt-3">Govt Schemes Guidance</h5>
         </div>
       </div>
       <div class="col-md-3 col-6">
-        <div class="card service-card p-3">
+        <div class="card service-card p-3" tabindex="0" aria-label="Joint Venture and Partnership Support service">
           <div class="fs-1">🤝</div>
           <h5 class="mt-3">JV & Partnership Support</h5>
         </div>
       </div>
       <div class="col-md-3 col-6">
-        <div class="card service-card p-3">
+        <div class="card service-card p-3" tabindex="0" aria-label="Events and Webinars service">
           <div class="fs-1">🎤</div>
           <h5 class="mt-3">Events & Webinars</h5>
         </div>
@@ -90,114 +88,861 @@
   </div>
 </section>
 
-<!-- About -->
-<section id="about" class="bg-light">
+
+<div class="section-separator" aria-hidden="true"></div>
+
+
+<!-- About Section -->
+<section id="about" class="bg-light" role="region" aria-labelledby="aboutHeading">
   <div class="container" data-aos="fade-right">
     <div class="row align-items-center">
-      <div class="col-md-6">
+      <div class="col-md-6 mb-4 mb-md-0">
         <h2>About IICKC</h2>
-        <p>The India International Chamber of Knowledge and Commerce (IICKC) connects Indian businesses and institutions with global partners through knowledge, advocacy, and on‑ground facilitation.</p>
-        <p><strong>Mission & Vision:</strong> To strengthen India's international trade capacity by delivering market intelligence, fostering partnerships, and supporting business growth through high-quality programs and policy advocacy.</p>
+        <p>
+          The India International Chamber of Knowledge and Commerce (IICKC) connects Indian businesses and institutions with global partners through knowledge, advocacy, and on‑ground facilitation.
+        </p>
+        <p>
+          <strong>Mission & Vision:</strong> To strengthen India's international trade capacity by delivering market intelligence, fostering partnerships, and supporting business growth through high-quality programs and policy advocacy.
+        </p>
       </div>
-      <div class="col-md-6" data-aos="fade-left">
-        <img src="https://images.unsplash.com/photo-1534951009808-766178b47a4f?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded" alt="International Trade">
+      <div class="col-md-6 text-center">
+        <!-- Put your actual logo file name here -->
+        <img src="logo.jpg" alt="IICKC Logo" class="img-fluid mb-3" style="max-width:175px; border-radius:8px;">
+      </div>
+    </div>
+
+    <!-- Founding Team -->
+    <div class="mt-5">
+      <h3 class="mb-4">Founding Team</h3>
+      <div class="row g-4">
+        <div class="col-md-4 col-sm-6 text-center">
+          <img src="founder1.jpg" class="rounded-circle mb-2" alt="Founder 1" style="width:120px;height:120px;">
+          <h5>Dr. Ashok Kumar</h5>
+          <p class="small">Chairman & Co-Founder<br>Seasoned trade policy expert and former Ambassador, passionate about fostering Indo-global entrepreneurship.</p>
+        </div>
+        <div class="col-md-4 col-sm-6 text-center">
+          <img src="founder2.jpg" class="rounded-circle mb-2" alt="Founder 2" style="width:120px;height:120px;">
+          <h5>Ms. Priya Shah</h5>
+          <p class="small">Director & Co-Founder<br>Business strategist with 15+ years in export facilitation and SME empowerment.</p>
+        </div>
+        <div class="col-md-4 col-sm-6 text-center">
+          <img src="founder3.jpg" class="rounded-circle mb-2" alt="Founder 3" style="width:120px;height:120px;">
+          <h5>Mr. Ravi Desai</h5>
+          <p class="small">Secretary<br>Corporate lawyer and nonprofit specialist, committed to knowledge partnerships and global commerce.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advisory Council -->
+    <div class="mt-5">
+      <h3 class="mb-4">Advisory Council</h3>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped w-100">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Designation</th>
+              <th>Sector</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Dr. Vivek Sagar</td>
+              <td>Chief Advisor</td>
+              <td>International Trade Policy</td>
+            </tr>
+            <tr>
+              <td>Ms. Rubina Gupta</td>
+              <td>Advisory Member</td>
+              <td>Logistics & Supply Chain</td>
+            </tr>
+            <tr>
+              <td>Mr. Sunil Mehra</td>
+              <td>Advisory Member</td>
+              <td>Legal & Compliance</td>
+            </tr>
+            <!-- Add more as needed -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Objectives & Compliance Accordion -->
+    <div class="mt-5">
+      <div class="accordion" id="aboutAccordion">
+        <!-- Chamber Objectives Accordion Item -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingObjectives">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseObjectives" aria-expanded="true" aria-controls="collapseObjectives">
+              Chamber Objectives
+            </button>
+          </h2>
+          <div id="collapseObjectives" class="accordion-collapse collapse show" aria-labelledby="headingObjectives" data-bs-parent="#aboutAccordion">
+            <div class="accordion-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">To promote, support and facilitate international knowledge partnerships and trade collaborations.</li>
+                <li class="list-group-item">To provide research, advocacy, and policy support for export growth and joint ventures.</li>
+                <li class="list-group-item">To organize events, missions, and training to build global connections.</li>
+                <li class="list-group-item">To represent member interests before government and global trade bodies.</li>
+                <li class="list-group-item">To foster ethical and sustainable trade practices among Indian enterprises.</li>
+                <!-- Add other objectives as stated in your official MOA -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Compliance & Legal Accordion Item -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCompliance">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCompliance" aria-expanded="false" aria-controls="collapseCompliance">
+              Compliance & Legal
+            </button>
+          </h2>
+          <div id="collapseCompliance" class="accordion-collapse collapse" aria-labelledby="headingCompliance" data-bs-parent="#aboutAccordion">
+            <div class="accordion-body">
+              <ul>
+                <li>Registered under Section 8, Companies Act, 2013</li>
+                <li><strong>PAN:</strong> AABC1234D</li>
+                <li><strong>80G & 12A (Income Tax):</strong> Approved under relevant sections</li>
+                <li>All operations in accordance with relevant laws and ethical standards</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Events with Countdown -->
-<section id="events">
-  <div class="container text-center" data-aos="zoom-in">
-    <h2 class="mb-4">Upcoming Event</h2>
-    <div class="card mx-auto" style="max-width: 500px;">
-      <div class="card-body">
-        <h5 class="card-title">Global Trade Connect 2025</h5>
-        <p class="card-text">Join industry leaders to explore international collaboration opportunities.</p>
-        <p class="text-muted">Date: 15th September 2025 | New Delhi</p>
-        
-        <!-- Countdown Timer -->
-        <div id="countdown" class="fw-bold text-primary my-3"></div>
-        
-        <a href="mailto:iickcindia@gmail.com" class="btn btn-primary">Register Now</a>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Partners -->
-<section id="partners" class="bg-light">
-  <div class="container text-center" data-aos="fade-up">
-    <h2 class="mb-4">Trusted by Partners</h2>
-    <div class="partner-logos d-flex flex-wrap justify-content-center">
-      <img src="https://via.placeholder.com/120x60?text=Partner+1" alt="Partner 1">
-      <img src="https://via.placeholder.com/120x60?text=Partner+2" alt="Partner 2">
-      <img src="https://via.placeholder.com/120x60?text=Partner+3" alt="Partner 3">
-      <img src="https://via.placeholder.com/120x60?text=Partner+4" alt="Partner 4">
-    </div>
-  </div>
-</section>
+<div class="section-separator" aria-hidden="true"></div>
 
-<!-- Contact Form -->
-<section id="contact">
+
+<!-- Membership Section -->
+<section id="membership" class="bg-light" role="region" aria-labelledby="membershipHeading">
   <div class="container" data-aos="fade-up">
-    <h2 class="text-center mb-4">Get in Touch</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <form action="https://formspree.io/f/your_form_id" method="POST" class="p-4 border rounded shadow-sm bg-light">
-          <div class="mb-3">
-            <label for="name" class="form-label">Full Name</label>
-            <input type="text" name="name" id="name" class="form-control" required>
+    <h2 id="membershipHeading" class="mb-4 text-center">Membership</h2>
+<!-- Why Join Section -->
+<div class="mb-5">
+  <h3>Why Join?</h3>
+  <ul class="list-group list-group-flush mb-3">
+    <li class="list-group-item">Access to global trade missions and events</li>
+    <li class="list-group-item">Expert guidance on government export schemes</li>
+    <li class="list-group-item">Business matchmaking and JV support</li>
+    <li class="list-group-item">Policy advocacy and real-time intelligence</li>
+    <li class="list-group-item">Priority invitations to webinars, training and partner programs</li>
+  </ul>
+</div>
+
+<!-- Membership Plans Comparison Table -->
+<div class="mb-5">
+  <h3>Comparison of Membership Plans</h3>
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Features</th>
+          <th scope="col">Individual</th>
+          <th scope="col">Corporate</th>
+          <th scope="col">Institutional</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Trade Mission Access</td><td>✔️ (Limited)</td><td>✔️</td><td>✔️</td></tr>
+        <tr><td>Webinars & Events</td><td>✔️</td><td>✔️</td><td>✔️</td></tr>
+        <tr><td>JV/Partnership Support</td><td>—</td><td>✔️</td><td>✔️</td></tr>
+        <tr><td>Govt Schemes Guidance</td><td>Limited</td><td>Full</td><td>Full</td></tr>
+        <tr><td>Annual Fee (INR)</td><td>2,000</td><td>12,000</td><td>18,000</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- FAQs Section (Accordion) -->
+<div class="mb-5">
+  <h3>Membership FAQs</h3>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq1">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqcollapse1" aria-expanded="true" aria-controls="faqcollapse1">
+          Who can join IICKC?
+        </button>
+      </h2>
+      <div id="faqcollapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Any individual, company, or institution interested in global trade and knowledge exchange may apply for membership.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq2">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqcollapse2" aria-expanded="false" aria-controls="faqcollapse2">
+          How long does approval take?
+        </button>
+      </h2>
+      <div id="faqcollapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Applications are reviewed within 7 business days. You will be notified via email regarding acceptance.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="faq3">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqcollapse3" aria-expanded="false" aria-controls="faqcollapse3">
+          Can the membership be upgraded?
+        </button>
+      </h2>
+      <div id="faqcollapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes, you can upgrade your membership plan by contacting the IICKC team at any time.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Payment Instructions (Accordion) -->
+<div class="mb-5">
+  <div class="accordion" id="paymentAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="paymentHeading">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#paymentCollapse" aria-expanded="false" aria-controls="paymentCollapse">
+          Payment Instructions
+        </button>
+      </h2>
+      <div id="paymentCollapse" class="accordion-collapse collapse" aria-labelledby="paymentHeading" data-bs-parent="#paymentAccordion">
+        <div class="accordion-body">
+          <ul>
+            <li><strong>UPI:</strong> <code>iickcindia@icici</code></li>
+            <li>
+              <strong>Bank Transfer:</strong><br />
+              <strong>Account Name:</strong> India International Chamber of Knowledge & Commerce<br />
+              <strong>Bank:</strong> ICICI Bank<br />
+              <strong>Account Number:</strong> 123456789<br />
+              <strong>IFSC Code:</strong> ICIC0001234
+            </li>
+            <li>After payment, please upload transaction details in the application form or email to <a href="mailto:iickcindia@gmail.com">iickcindia@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Online Application Form -->
+<div class="mb-5">
+  <h3>Membership Application</h3>
+  <form action="https://formspree.io/f/your_form_id" method="POST" class="p-4 border rounded shadow-sm bg-white" aria-label="Membership application form">
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name / Organization</label>
+      <input type="text" name="name" id="name" class="form-control" required />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email Address</label>
+      <input type="email" name="_replyto" id="email" class="form-control" required />
+    </div>
+    <div class="mb-3">
+      <label for="plan" class="form-label">Membership Plan</label>
+      <select name="plan" id="plan" class="form-select" required>
+        <option value="">Select plan</option>
+        <option value="Individual">Individual</option>
+        <option value="Corporate">Corporate</option>
+        <option value="Institutional">Institutional</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="details" class="form-label">Business/Organization Sector</label>
+      <input type="text" name="details" id="details" class="form-control" />
+    </div>
+    <div class="mb-3">
+      <label for="transaction" class="form-label">Payment Transaction ID / Reference</label>
+      <input type="text" name="transaction" id="transaction" class="form-control" />
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message (optional)</label>
+      <textarea name="message" id="message" rows="3" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Apply Now</button>
+  </form>
+</div>
+
+  </div>
+</section>
+
+
+<div class="section-separator" aria-hidden="true"></div>
+
+
+<!-- Events Section -->
+<section id="events" class="py-5 bg-light" role="region" aria-labelledby="eventsHeading">
+  <div class="container" data-aos="fade-up">
+    <h2 class="mb-4 text-center">Events</h2>
+
+    <!-- Upcoming Events Calendar (Accordion for Mobile) -->
+    <div class="mb-5">
+      <div class="accordion" id="eventCalendarAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="calendarHeading">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#calendarCollapse" aria-expanded="true" aria-controls="calendarCollapse">
+              Calendar of Upcoming Events (Year 1 Plan)
+            </button>
+          </h2>
+          <div id="calendarCollapse" class="accordion-collapse collapse show" aria-labelledby="calendarHeading" data-bs-parent="#eventCalendarAccordion">
+            <div class="accordion-body">
+              <div class="table-responsive">
+                <table class="table table-bordered">
+                  <thead class="table-secondary">
+                    <tr>
+                      <th>Date</th>
+                      <th>Event</th>
+                      <th>Location</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>15 Sept 2025</td>
+                      <td>Global Trade Connect 2025</td>
+                      <td>New Delhi</td>
+                      <td>Flagship B2B networking, delegations and keynotes</td>
+                    </tr>
+                    <tr>
+                      <td>10 Oct 2025</td>
+                      <td>SME Exporter Connect</td>
+                      <td>Mumbai</td>
+                      <td>Workshop for small exporters, policy updates</td>
+                    </tr>
+                    <tr>
+                      <td>22 Nov 2025</td>
+                      <td>India-Germany Tech Meet</td>
+                      <td>Pune</td>
+                      <td>Delegation, roundtables, industry expo</td>
+                    </tr>
+                    <tr>
+                      <td>12 Dec 2025</td>
+                      <td>Webinar: New Export Incentives</td>
+                      <td>Online</td>
+                      <td>Virtual presentation, Q&A</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" name="_replyto" id="email" class="form-control" required>
+        </div>
+      </div>
+    </div>
+
+    <!-- Past Events Gallery Accordion -->
+    <div class="mb-5">
+      <div class="accordion" id="galleryAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="galleryHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#galleryCollapse" aria-expanded="false" aria-controls="galleryCollapse">
+              Past Events Gallery
+            </button>
+          </h2>
+          <div id="galleryCollapse" class="accordion-collapse collapse" aria-labelledby="galleryHeading" data-bs-parent="#galleryAccordion">
+            <div class="accordion-body">
+              <div class="row g-3">
+                <!-- Photos -->
+                <div class="col-6 col-md-3">
+                  <img src="event1.jpg" alt="Event 1 Photo" class="img-fluid rounded mb-2">
+                  <div class="small">Global Trade Connect 2024</div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <img src="event2.jpg" alt="Event 2 Photo" class="img-fluid rounded mb-2">
+                  <div class="small">SME Export Workshop</div>
+                </div>
+                <!-- Brochure -->
+                <div class="col-6 col-md-3">
+                  <a href="brochure1.pdf" target="_blank" class="btn btn-sm btn-outline-secondary mb-2 w-100">View Brochure</a>
+                  <div class="small">Tech Meet 2024</div>
+                </div>
+                <!-- Videos -->
+                <div class="col-6 col-md-3">
+                  <a href="https://www.youtube.com/embed/xyz123" target="_blank" class="btn btn-sm btn-outline-secondary mb-2 w-100">Watch Video</a>
+                  <div class="small">Webinar Highlights</div>
+                </div>
+                <!-- Add more gallery items as needed -->
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea name="message" id="message" rows="4" class="form-control" required></textarea>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delegation Signup Form -->
+    <div class="mb-5">
+      <h3>Delegation/B2B Meet Signup</h3>
+      <form action="https://formspree.io/f/your_form_id_delegate" method="POST" class="p-4 border rounded bg-white shadow-sm">
+        <div class="mb-3">
+          <label for="delname" class="form-label">Name / Company</label>
+          <input type="text" name="delname" id="delname" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="delemail" class="form-label">Email</label>
+          <input type="email" name="delemail" id="delemail" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="event" class="form-label">Event/Delegation</label>
+          <select name="event" id="event" class="form-select" required>
+            <option value="">Select Event</option>
+            <option value="Global Trade Connect 2025">Global Trade Connect 2025</option>
+            <option value="India-Germany Tech Meet">India-Germany Tech Meet</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="sector" class="form-label">Sector/Interest</label>
+          <input type="text" name="sector" id="sector" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </div>
+
+    <!-- Webinar Registration (Accordion for mobile) -->
+    <div class="mb-5">
+      <div class="accordion" id="webinarAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="webinarHeading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#webinarCollapse" aria-expanded="false" aria-controls="webinarCollapse">
+              Webinar Registration
+            </button>
+          </h2>
+          <div id="webinarCollapse" class="accordion-collapse collapse" aria-labelledby="webinarHeading" data-bs-parent="#webinarAccordion">
+            <div class="accordion-body">
+              <form action="https://formspree.io/f/your_form_id_webinar" method="POST" class="p-4 border rounded bg-white shadow-sm">
+                <div class="mb-3">
+                  <label for="webinarname" class="form-label">Full Name</label>
+                  <input type="text" name="webinarname" id="webinarname" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <label for="webinaremail" class="form-label">Email</label>
+                  <input type="email" name="webinaremail" id="webinaremail" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <label for="webinar_event" class="form-label">Webinar</label>
+                  <select name="webinar_event" id="webinar_event" class="form-select" required>
+                    <option value="">Select Webinar</option>
+                    <option value="New Export Incentives">New Export Incentives</option>
+                    <!-- Add more options as needed -->
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-success">Register</button>
+              </form>
+            </div>
           </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="footer text-center">
-  <div class="container">
-    <p class="mb-1">📧 <a href="mailto:iickcindia@gmail.com">iickcindia@gmail.com</a> | 📞 +91 9309703675</p>
-    <p>© 2025 IICKC – India International Chamber of Knowledge and Commerce</p>
-  </div>
-</footer>
 
-<!-- Scripts -->
+<div class="section-separator" aria-hidden="true"></div>
+
+
+<!-- Resources Section -->
+<section id="resources" class="py-5 bg-light" role="region" aria-labelledby="resourcesHeading">
+  <div class="container" data-aos="fade-up">
+    <h2 id="resourcesHeading" class="mb-4 text-center">Resources</h2>
+<!-- Govt Schemes Dashboard Accordion -->
+<div class="mb-5">
+  <div class="accordion" id="schemeAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="schemeHeading">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#schemeCollapse" aria-expanded="true" aria-controls="schemeCollapse">
+          Govt Schemes Dashboard
+        </button>
+      </h2>
+      <div id="schemeCollapse" class="accordion-collapse collapse show" aria-labelledby="schemeHeading" data-bs-parent="#schemeAccordion">
+        <div class="accordion-body">
+          <form class="row g-3 mb-3">
+            <div class="col-md-4">
+              <label for="schemeSector" class="form-label">Sector</label>
+              <select id="schemeSector" class="form-select" aria-label="Filter schemes by sector">
+                <option value="">All</option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Manufacturing">Manufacturing</option>
+                <option value="IT & Services">IT & Services</option>
+                <option value="SMEs">SMEs</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <label for="schemeType" class="form-label">Scheme Type</label>
+              <select id="schemeType" class="form-select" aria-label="Filter schemes by type">
+                <option value="">All</option>
+                <option value="Subsidy">Subsidy</option>
+                <option value="Export Incentive">Export Incentive</option>
+                <option value="Training">Training</option>
+              </select>
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+              <button type="button" class="btn btn-primary w-100" onclick="alert('Filters applied! (Demo)')">Apply Filters</button>
+            </div>
+          </form>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Scheme Name</th>
+                  <th>Sector</th>
+                  <th>Type</th>
+                  <th>Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>MEIS Export Subsidy</td>
+                  <td>Manufacturing</td>
+                  <td>Export Incentive</td>
+                  <td><a href="#" target="_blank">View</a></td>
+                </tr>
+                <tr>
+                  <td>Agri Infrastructure Fund</td>
+                  <td>Agriculture</td>
+                  <td>Subsidy</td>
+                  <td><a href="#" target="_blank">View</a></td>
+                </tr>
+                <tr>
+                  <td>SME Skill Development</td>
+                  <td>SMEs</td>
+                  <td>Training</td>
+                  <td><a href="#" target="_blank">View</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Export Guides Grid -->
+<div class="mb-5">
+  <h3>Export Guides</h3>
+  <div class="row g-3">
+    <div class="col-12 col-md-4">
+      <a href="guide1.pdf" target="_blank" class="d-flex align-items-center p-3 border rounded bg-white shadow-sm" aria-label="Download India Exports Guide 2025 PDF">
+        <span class="me-2"><i class="bi bi-file-earmark-pdf text-danger fs-3"></i></span>
+        <span>India Exports Guide 2025 (PDF)</span>
+      </a>
+    </div>
+    <div class="col-12 col-md-4">
+      <a href="article1.html" target="_blank" class="d-flex align-items-center p-3 border rounded bg-white shadow-sm" aria-label="Read How to Register for GST as Exporter article">
+        <span class="me-2"><i class="bi bi-book text-primary fs-3"></i></span>
+        <span>How to Register for GST as Exporter</span>
+      </a>
+    </div>
+    <div class="col-12 col-md-4">
+      <a href="guide2.pdf" target="_blank" class="d-flex align-items-center p-3 border rounded bg-white shadow-sm" aria-label="Download Export Documentation Essentials PDF">
+        <span class="me-2"><i class="bi bi-file-earmark-pdf text-danger fs-3"></i></span>
+        <span>Export Documentation Essentials (PDF)</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Certification & JV Knowledgebase Accordion -->
+<div class="mb-5">
+  <div class="accordion" id="certAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="certHeading">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#certCollapse" aria-expanded="false" aria-controls="certCollapse">
+          Certification & JV Knowledgebase
+        </button>
+      </h2>
+      <div id="certCollapse" class="accordion-collapse collapse" aria-labelledby="certHeading" data-bs-parent="#certAccordion">
+        <div class="accordion-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="iso-guide.pdf" target="_blank">ISO Certification Process for Export</a>
+            </li>
+            <li class="list-group-item">
+              <a href="jv-types.html" target="_blank">Types of Joint Venture Models in India</a>
+            </li>
+            <li class="list-group-item">
+              <a href="fdi-steps.pdf" target="_blank">FDI Approval & Legal Steps (PDF)</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Policy Updates / Notifications Feed -->
+<div class="mb-5">
+  <h3>Policy Updates & Notifications</h3>
+  <div style="max-height:250px; overflow-y:auto;" class="border rounded bg-white p-3 mb-3" aria-label="Scrollable feed of policy updates">
+    <ul class="list-unstyled mb-0">
+      <li class="pb-2"><strong>10 Aug 2025:</strong> New MEIS rates announced for textile exports.</li>
+      <li class="pb-2"><strong>01 Aug 2025:</strong> Ministry announces phased roll-out for DGFT online portal.</li>
+      <li class="pb-2"><strong>25 Jul 2025:</strong> Webinar on 80G/12A compliance for export NGOs.</li>
+      <li class="pb-2"><strong>07 Jul 2025:</strong> India-Germany B2B summit registrations open.</li>
+    </ul>
+  </div>
+</div>
+  </div>
+</section>
+
+
+<div class="section-separator" aria-hidden="true"></div>
+
+
+<!-- Partners Section -->
+<section id="partners" class="py-5 bg-light" role="region" aria-labelledby="partnersHeading">
+  <div class="container" data-aos="fade-up">
+    <h2 id="partnersHeading" class="mb-4 text-center">Partners & Collaborators</h2>
+<div class="accordion mb-5" id="partnersAccordion" role="region" aria-label="Partners categories accordion">
+  <!-- Export Promotion Councils -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="epcHeading">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#epcCollapse" aria-expanded="true" aria-controls="epcCollapse">
+        Export Promotion Councils (EPCs)
+      </button>
+    </h2>
+    <div id="epcCollapse" class="accordion-collapse collapse show" aria-labelledby="epcHeading" data-bs-parent="#partnersAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>EEPC India</li>
+          <li>FIEO</li>
+          <li>Chemexcil</li>
+          <li>GJEPC</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Embassies -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="embHeading">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#embCollapse" aria-expanded="false" aria-controls="embCollapse">
+        Embassies & Consulates
+      </button>
+    </h2>
+    <div id="embCollapse" class="accordion-collapse collapse" aria-labelledby="embHeading" data-bs-parent="#partnersAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>Embassy of Germany (Delhi)</li>
+          <li>Embassy of Japan</li>
+          <li>US Commercial Service</li>
+          <li>High Commission of UK</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- International Chambers -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="chamberHeading">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chamberCollapse" aria-expanded="false" aria-controls="chamberCollapse">
+        International Chambers
+      </button>
+    </h2>
+    <div id="chamberCollapse" class="accordion-collapse collapse" aria-labelledby="chamberHeading" data-bs-parent="#partnersAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>Indo German Chamber of Commerce</li>
+          <li>AMCHAM India</li>
+          <li>British Business Group</li>
+          <li>Confederation of Asian Chambers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Govt Bodies & Institutions -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="govtHeading">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#govtCollapse" aria-expanded="false" aria-controls="govtCollapse">
+        Government Bodies & Institutions
+      </button>
+    </h2>
+    <div id="govtCollapse" class="accordion-collapse collapse" aria-labelledby="govtHeading" data-bs-parent="#partnersAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>Ministry of Commerce & Industry (GOI)</li>
+          <li>DGFT</li>
+          <li>Export Credit Guarantee Corp</li>
+          <li>ICICI Bank</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Online MoU Proposal Form -->
+<div class="mb-5" aria-label="Online Memorandum of Understanding proposal form">
+  <h3>Online MoU Proposal</h3>
+  <form action="https://formspree.io/f/your_form_id_mou" method="POST" class="p-4 border rounded bg-white shadow-sm">
+    <div class="mb-3">
+      <label for="mou_org" class="form-label">Organization Name</label>
+      <input type="text" name="mou_org" id="mou_org" class="form-control" required />
+    </div>
+    <div class="mb-3">
+      <label for="mou_contact" class="form-label">Contact Person / Email</label>
+      <input type="text" name="mou_contact" id="mou_contact" class="form-control" required />
+    </div>
+    <div class="mb-3">
+      <label for="mou_sector" class="form-label">Sector / Collaboration Interest</label>
+      <input type="text" name="mou_sector" id="mou_sector" class="form-control" />
+    </div>
+    <div class="mb-3">
+      <label for="mou_message" class="form-label">Proposal Details</label>
+      <textarea name="mou_message" id="mou_message" rows="3" class="form-control" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Proposal</button>
+  </form>
+</div>
+
+<!-- Past Collaborators / MoUs Accordion -->
+<div class="accordion mb-3" id="collabAccordion" aria-label="Past collaborators and memorandums of understanding">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="collabHeading">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collabCollapse" aria-expanded="false" aria-controls="collabCollapse">
+        Past Collaborators & MoUs Signed
+      </button>
+    </h2>
+    <div id="collabCollapse" class="accordion-collapse collapse" aria-labelledby="collabHeading" data-bs-parent="#collabAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>Indo German Chamber – Joint conference MoU, 2024</li>
+          <li>FIEO – Exporter capacity building MoU, 2025</li>
+          <li>ICICI Bank – Financial support MoU, 2024</li>
+          <li>AMCHAM – Digital Trade Dialogue MoU, 2025</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+
+<div class="section-separator" aria-hidden="true"></div>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-5" role="region" aria-labelledby="contactHeading">
+  <div class="container" data-aos="fade-up">
+    <h2 id="contactHeading" class="mb-4 text-center">Contact Us</h2>
+<div class="row g-4">
+  <!-- Map / Virtual Location -->
+  <div class="col-12 col-md-6">
+    <div class="ratio ratio-16x9 rounded shadow-sm mb-3">
+      <iframe title="IICKC Location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.8392133237!2d77.068896265357!3d28.527280444294187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d044a0965a8cd%3A0x3a7030a5b4386ef1!2sNew+Delhi%2C+Delhi%2C+India!5e0!3m2!1sen!2sus!4v1620991234567!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <!-- Contact Details and Form -->
+  <div class="col-12 col-md-6">
+    <div class="mb-4">
+      <h4>Get in Touch</h4>
+      <p><strong>Phone:</strong> <a href="tel:+919309703675">+91 9309703675</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/919309703675" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+      <p><strong>Email:</strong> <a href="mailto:iickcindia@gmail.com">iickcindia@gmail.com</a></p>
+      <p><strong>Office Hours:</strong><br />Mon - Fri : 9:30 AM - 6:30 PM<br />Sat : 10:00 AM - 2:00 PM</p>
+    </div>
+    <div class="mb-4">
+      <h4>Quick Contact Form</h4>
+      <form action="https://formspree.io/f/your_form_id_contact" method="POST" class="p-3 border rounded bg-white shadow-sm" aria-label="Quick contact form">
+        <div class="mb-3">
+          <label for="contactName" class="form-label">Name</label>
+          <input type="text" name="name" id="contactName" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="contactEmail" class="form-label">Email</label>
+          <input type="email" name="_replyto" id="contactEmail" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="contactMessage" class="form-label">Message</label>
+          <textarea name="message" id="contactMessage" rows="3" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send</button>
+      </form>
+    </div>
+    <div>
+      <h4>Follow Us</h4>
+      <a href="https://linkedin.com/company/iickc" target="_blank" class="me-3" aria-label="LinkedIn"><i class="bi bi-linkedin fs-3"></i></a>
+      <a href="https://twitter.com/iickc" target="_blank" class="me-3" aria-label="Twitter"><i class="bi bi-twitter fs-3"></i></a>
+      <a href="https://youtube.com/iickc" target="_blank" aria-label="YouTube"><i class="bi bi-youtube fs-3"></i></a>
+    </div>
+  </div>
+</div>
+
+  </div>
+</section>
+
+<!-- Footer --> 
+ <footer class="footer text-white bg-dark py-4 mt-4" role="contentinfo"> 
+  <div class="container"> 
+    <div class="row align-items-center gy-2"> 
+      <div class="col-12 col-md-3 text-center text-md-start mb-2 mb-md-0"> 
+        <img src="logo.jpg" alt="IICKC Logo" style="max-width:70px;vertical-align:middle;" class="me-2 mb-2 mb-md-0" /> 
+        <span class="fw-bold" style="vertical-align:middle;">IICKC</span> 
+      </div> 
+      <div class="col-12 col-md-4 text-center text-md-start"> 
+        <nav aria-label="Footer quick links"> 
+          <a href="#about" class="text-white me-3 text-decoration-none">About</a> 
+          <a href="#membership" class="text-white me-3 text-decoration-none">Membership</a> 
+          <a href="#events" class="text-white me-3 text-decoration-none">Events</a> 
+          <a href="#resources" class="text-white me-3 text-decoration-none">Resources</a> 
+          <a href="#partners" class="text-white me-3 text-decoration-none">Partners</a> 
+          <a href="#contact" class="text-white text-decoration-none">Contact</a> </nav> 
+      </div> 
+      <div class="col-12 col-md-3 text-center text-md-start mt-2 mt-md-0"> 
+          <small> 
+            <div>
+              Registered under Section 8
+            </div> 
+            <div>PAN: AABC1234D | 80G/12A Approved</div> 
+          </small> 
+      </div> 
+      <div class="col-12 col-md-2 text-center text-md-end"> 
+          <a href="https://linkedin.com/company/iickc" target="_blank" class="me-2" aria-label="LinkedIn">
+            <i class="bi bi-linkedin fs-5"></i></a> 
+          <a href="https://twitter.com/iickc" target="_blank" class="me-2" aria-label="Twitter">
+            <i class="bi bi-twitter fs-5"></i></a> 
+          <a href="https://youtube.com/iickc" target="_blank" aria-label="YouTube">
+            <i class="bi bi-youtube fs-5"></i></a> 
+      </div> 
+        </div> <hr class="border-gray my-3" /> 
+        <div class="row"> 
+          <div class="col-12 text-center"> 
+            <small>&copy; 2025 IICKC – India International Chamber of Knowledge and Commerce. All rights reserved.
+            </small> 
+          </div> 
+        </div> 
+    </div> 
+  </footer> <!-- Bootstrap JS Bundle -->
+<!-- Bootstrap JS Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- AOS Animation JS -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init({ duration: 1000, once: true });
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
 
-  // Countdown setup
-  const eventDate = new Date("Sep 15, 2025 10:00:00").getTime();
-  const countdownFunction = setInterval(function() {
-    const now = new Date().getTime();
-    const distance = eventDate - now;
 
-    if (distance <= 0) {
-      document.getElementById("countdown").innerHTML = "🎉 Happening Now!";
-      clearInterval(countdownFunction);
-      return;
-    }
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    document.getElementById("countdown").innerHTML =
-      days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-  }, 1000);
+  // Countdown Timer script as provided earlier
+  // Countdown setup 
+  const eventDate = new Date("Sep 15, 2025 10:00:00").getTime(); 
+  const countdownFunction = setInterval(function() 
+  { 
+    const now = new Date().getTime(); 
+    const distance = eventDate - now; 
+    if (distance <= 0) { 
+      document.getElementById("countdown").innerHTML = "🎉 Happening Now!"; 
+      clearInterval(countdownFunction); 
+      return; 
+      } 
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24)); 
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); 
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)); 
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000); 
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s "; }, 1000);
 </script>
 </body>
 </html>
