@@ -1,0 +1,103 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+:root {
+  --primary-color: #002855;
+  --secondary-color: #fbc02d;
+  --text-color: #333;
+}
+
+.navbar {
+  background-color: var(--primary-color) !important;
+}
+
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: var(--secondary-color) !important;
+}
+
+.hero {
+  background: url("../images/background.jpg") center/cover no-repeat;
+  color: white;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.partner-logos img {
+  max-height: 50px;
+  margin: 10px;
+  filter: grayscale(100%);
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.partner-logos img:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 2rem 0;
+}
+
+.footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+#countdown {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.section-separator {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #fbc02d, #002855);
+  margin: 3rem auto;
+  border-radius: 2px;
+}
+
