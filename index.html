@@ -1,115 +1,198 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>IICKC — India International Chamber of Knowledge and Commerce</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <meta name="theme-color" content="#003366">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IICKC – Fostering Global Trade</title>
+  
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="css/theme.css">
 </head>
 <body>
-  <header class="site-header" role="banner">
-    <div class="brand">
-      <img src="images/logo.png" alt="IICKC logo" class="logo">
-      <div>
-        <h1>India International Chamber of Knowledge and Commerce</h1>
-        <div class="small muted">Fostering Global Trade Through Knowledge Partnerships</div>
-      </div>
-    </div>
 
-    <nav class="primary" role="navigation" aria-label="Primary navigation">
-<!--      <button class="mobile-toggle" id="mobileToggle" aria-expanded="false">Menu</button>
--->
-      <ul class="nav-list" id="navList">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="membership.html">Membership</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="resources.html">Resources</a></li>
-        <li><a href="partner.html">Partners</a></li>
-        <li><a href="contact.html">Contact</a></li>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+  	<img src="logo.png" alt="IICKC Logo" height="40" class="me-2" style="max-height:40px;">
+  	<span>IICKC</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="#partners">Partners</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
-<!--      <a class="cta-member" href="membership.html">Become a Member</a>
-      -->
-    </nav>
-  </header>
-
-  <main class="site" id="home" role="main">
-    <section class="hero">
-      <div class="hero-left">
-        <h2>Fostering Global Trade Through Knowledge Partnerships</h2>
-        <p class="tagline">We empower businesses with insights, international networks, and practical support for exports, joint ventures, and trade facilitation.</p>
-
-        <div class="services-grid">
-          <div class="service">🔷 Trade Missions</div>
-          <div class="service">📑 Govt Schemes Guidance</div>
-          <div class="service">🤝 JV & Partnership Support</div>
-          <div class="service">🎤 Events & Webinars</div>
-        </div>
-
-        <div class="hero-cta">
-          <a class="btn" href="membership.html">Become a Member</a>
-          <a class="btn btn-alt" href="events.html">View Events</a>
-        </div>
-
-        <div style="margin-top:1rem" class="small muted">Trusted by partners:</div>
-        <div class="partners" id="partnersList">
-          <!-- partner images will be added to images/partners/ and can be referenced -->
-        </div>
-      </div>
-
-      <aside class="hero-visual">
-        <h3>Upcoming</h3>
-        <div id="miniEvent" class="mini-event">
-          <strong>India–Gulf Trade Mission</strong>
-          <div class="small muted">Jan 2026 — Dubai</div>
-          <p class="small muted">B2B meetings, sector briefings, export matchmaking.</p>
-          <a class="small" href="events.html">See all events →</a>
-        </div>
-      </aside>
-    </section>
-
-    <section class="card">
-      <h2>About IICKC</h2>
-      <p class="muted small">The India International Chamber of Knowledge and Commerce (IICKC) connects Indian businesses and institutions with global partners through knowledge, advocacy, and on-ground facilitation.</p>
-      <div class="two-col">
-        <div>
-          <h3>Mission & Vision</h3>
-          <p>To strengthen India's international trade capacity by delivering market intelligence, fostering partnerships, and supporting business growth through high-quality programs and policy advocacy.</p>
-        </div>
-        <aside class="card">
-          <h4>Compliance & Legal</h4>
-          <p class="small muted">Registered as a Section 8 company. PAN: <em>AAAXX0000X</em>. 80G and 12A details available upon request.</p>
-          <a href="assets/Compliance.pdf" class="small">Download MOA / Compliance pack (PDF)</a>
-        </aside>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>Upcoming Event Highlight</h2>
-      <div class="event-highlight">
-        <img src="images/events/philippines2025.png" alt="Trade Visitors Delegation to Philippines 2025" style="width:100%;border-radius:8px">
-        <p class="small muted">Enquiries: <a href="mailto:iickcindia@gmail.com">iickcindia@gmail.com</a> • +91 9309703675</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="site">
-      <div class="footer-grid">
-        <div class="social-icons" aria-label="Social media links">
-          <a href="#" aria-label="Facebook" tabindex="0"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Twitter" tabindex="0"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="LinkedIn" tabindex="0"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#" aria-label="Instagram" tabindex="0"><i class="fab fa-instagram"></i></a>
-          <a href="https://wa.me/+919309703675" aria-label="WhatsApp" tabindex="0"><i class="fab fa-whatsapp"></i></a>
-        </div>
-      </div>
-      <div class="copyright">&copy; <span id="year"></span> &nbsp;  India International Chamber of Knowledge and Commerce</div>
     </div>
-  </footer>
+  </div>
+</nav>
 
-  <script src="js/main.js" defer></script>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container" data-aos="fade-up">
+    <h1 class="fw-bold">Fostering Global Trade Through Knowledge Partnerships</h1>
+    <p class="mt-3 fs-5">Empowering businesses with insights, international networks, and trade facilitation support.</p>
+    <a class="btn btn-warning btn-lg m-2" href="#services">Explore Services</a>
+    <a class="btn btn-outline-light btn-lg m-2" href="#contact">Join Our Network</a>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="mb-4">Our Key Services</h2>
+    <div class="row g-4">
+      <div class="col-md-3 col-6">
+        <div class="card service-card p-3">
+          <div class="fs-1">🌏</div>
+          <h5 class="mt-3">Trade Missions</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card service-card p-3">
+          <div class="fs-1">📑</div>
+          <h5 class="mt-3">Govt Schemes Guidance</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card service-card p-3">
+          <div class="fs-1">🤝</div>
+          <h5 class="mt-3">JV & Partnership Support</h5>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="card service-card p-3">
+          <div class="fs-1">🎤</div>
+          <h5 class="mt-3">Events & Webinars</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="bg-light">
+  <div class="container" data-aos="fade-right">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>About IICKC</h2>
+        <p>The India International Chamber of Knowledge and Commerce (IICKC) connects Indian businesses and institutions with global partners through knowledge, advocacy, and on‑ground facilitation.</p>
+        <p><strong>Mission & Vision:</strong> To strengthen India's international trade capacity by delivering market intelligence, fostering partnerships, and supporting business growth through high-quality programs and policy advocacy.</p>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1534951009808-766178b47a4f?auto=format&fit=crop&w=900&q=80" class="img-fluid rounded" alt="International Trade">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Events with Countdown -->
+<section id="events">
+  <div class="container text-center" data-aos="zoom-in">
+    <h2 class="mb-4">Upcoming Event</h2>
+    <div class="card mx-auto" style="max-width: 500px;">
+      <div class="card-body">
+        <h5 class="card-title">Global Trade Connect 2025</h5>
+        <p class="card-text">Join industry leaders to explore international collaboration opportunities.</p>
+        <p class="text-muted">Date: 15th September 2025 | New Delhi</p>
+        
+        <!-- Countdown Timer -->
+        <div id="countdown" class="fw-bold text-primary my-3"></div>
+        
+        <a href="mailto:iickcindia@gmail.com" class="btn btn-primary">Register Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Partners -->
+<section id="partners" class="bg-light">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="mb-4">Trusted by Partners</h2>
+    <div class="partner-logos d-flex flex-wrap justify-content-center">
+      <img src="https://via.placeholder.com/120x60?text=Partner+1" alt="Partner 1">
+      <img src="https://via.placeholder.com/120x60?text=Partner+2" alt="Partner 2">
+      <img src="https://via.placeholder.com/120x60?text=Partner+3" alt="Partner 3">
+      <img src="https://via.placeholder.com/120x60?text=Partner+4" alt="Partner 4">
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section id="contact">
+  <div class="container" data-aos="fade-up">
+    <h2 class="text-center mb-4">Get in Touch</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form action="https://formspree.io/f/your_form_id" method="POST" class="p-4 border rounded shadow-sm bg-light">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" name="name" id="name" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" name="_replyto" id="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea name="message" id="message" rows="4" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+  <div class="container">
+    <p class="mb-1">📧 <a href="mailto:iickcindia@gmail.com">iickcindia@gmail.com</a> | 📞 +91 9309703675</p>
+    <p>© 2025 IICKC – India International Chamber of Knowledge and Commerce</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+
+  // Countdown setup
+  const eventDate = new Date("Sep 15, 2025 10:00:00").getTime();
+  const countdownFunction = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = eventDate - now;
+
+    if (distance <= 0) {
+      document.getElementById("countdown").innerHTML = "🎉 Happening Now!";
+      clearInterval(countdownFunction);
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown").innerHTML =
+      days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  }, 1000);
+</script>
 </body>
 </html>
