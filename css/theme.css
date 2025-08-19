@@ -134,7 +134,7 @@ section {
 
 .founder-title {
   font-size: 1rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #fbc02d;
   font-weight: 600;
   margin-bottom: 0.4rem;
