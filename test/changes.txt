@@ -1,3 +1,5 @@
 changes
 
 1. make vision non-collapsible
+2. fix the home page scroll
+3. newsletter as menu to be added letter
