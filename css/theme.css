@@ -2,6 +2,8 @@ body {
   font-family: 'Lato', sans-serif;
   background-color: #ffffff;
   scroll-behavior: smooth;
+  font-size: 1.05rem;
+  color:#222;
 }
 
 h1, h2, h3, .navbar-brand {
@@ -179,4 +181,29 @@ section {
 #founding-members .bg-light .founders-row .founder-card {
   background: #fff !important;
   box-shadow: 0 4px 12px rgba(0,44,85,0.08);
+}
+
+/* Hide mobile text by default */
+.mobile-text {
+  display: none;
+}
+/* Show desktop text by default */
+.desktop-text {
+  display: inline;
+}
+
+/* When on screens 768px or less (typical mobile) */
+@media only screen and (max-width: 768px) {
+  .mobile-text {
+    display: inline;
+  }
+  .desktop-text {
+    display: none;
+  }
+}
+
+.highlight-international {
+  color: #EFBF04; 
+  font-weight: bold; 
+  font-size: 1.012em;
 }
