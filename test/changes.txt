@@ -1,11 +1,14 @@
-changes
+changes discussed
 
-- make vision non-collapsible
+*- If u click on the menu...it's not landing exactly on that section
 *- fix the home page scroll
-- fix font size for export guide guide / trade guide and policy update and notifications
 *- map fixing
-- iickc for mobile. second I as golden everywhere
-- mobile version logo adjustment
+*- make vision non-collapsible
+*- fix font size for export guide guide / trade guide and policy update and notifications
+*- iickc for mobile. second I as golden everywhere
+*- mobile version logo adjustment
+- website and email
+- integrating with forms or collecting info
 - Ravi - Australia FTA
 - Ravi - event section by Ravi, trade guide etc
 - Ravi - newsletter as menu to be added later
