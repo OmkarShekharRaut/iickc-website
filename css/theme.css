@@ -207,3 +207,51 @@ section {
   font-weight: bold; 
   font-size: 1.012em;
 }
+
+.ticker-container {
+  background: linear-gradient(90deg, #002855, #001f4d);
+  color: #fbc02d;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  padding: 8px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+
+.ticker-wrap {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker-scroll 30s linear infinite;
+}
+
+.ticker-move > span {
+  display: inline-block;
+  padding-right: 3rem;
+  user-select: none;
+}
+
+.ticker-container:hover .ticker-wrap,
+.ticker-container:focus-within .ticker-wrap {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.sectionticker {
+  scroll-margin-top: 80px; /* or the exact height of your header/navbar */
+  padding-top: 6rem;
+  padding-bottom: 0rem;
+  text-align: center;
+}
