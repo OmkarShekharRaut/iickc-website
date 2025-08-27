@@ -14,6 +14,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <!-- AOS Animation CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Link to External CSS -->
   <link rel="stylesheet" href="css/theme.css" />
@@ -383,46 +385,173 @@ enterprise growth</li>
 </div>
 
 <!-- FAQs Section (Accordion) -->
-<div class="mb-5">
-  <h3>Membership FAQs</h3>
-  <div class="accordion" id="faqAccordion">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="faq1">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqcollapse1" aria-expanded="true" aria-controls="faqcollapse1">
-          Who can join I<span class="highlight-international">I</span>CKC?
-        </button>
-      </h2>
-      <div id="faqcollapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Any individual, company, or institution interested in global trade and knowledge exchange may apply for membership.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="faq2">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqcollapse2" aria-expanded="false" aria-controls="faqcollapse2">
-          How long does approval take?
-        </button>
-      </h2>
-      <div id="faqcollapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Applications are reviewed within 7 business days. You will be notified via email regarding acceptance.
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="faq3">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqcollapse3" aria-expanded="false" aria-controls="faqcollapse3">
-          Can the membership be upgraded?
-        </button>
-      </h2>
-      <div id="faqcollapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
-        <div class="accordion-body">
-          Yes, you can upgrade your membership plan by contacting the I<span class="highlight-international">I</span>CKC team at any time.
-        </div>
+<!-- IICKC FAQ Accordion (Bootstrap 5) -->
+<div class="accordion my-4" id="iickcFAQ">
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq1-head">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+        1. What is IICKC?
+      </button>
+    </h2>
+    <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1-head" data-bs-parent="#iickcFAQ">
+      <div class="accordion-body">
+        The India International Chamber of Knowledge & Commerce (IICKC) is a Section 8 non-profit Chamber of Commerce dedicated to promoting international collaborations, trade partnerships, knowledge exchange, and business growth for Indian and global enterprises.
       </div>
     </div>
   </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq2-head">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+        2. What is the vision of IICKC?
+      </button>
+    </h2>
+    <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-head" data-bs-parent="#iickcFAQ">
+      <div class="accordion-body">
+        To build a strong platform for global knowledge sharing, business collaborations, technology partnerships, and sustainable growth, connecting India with the world.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq3-head">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+        3. Who can become a member of IICKC?
+      </button>
+    </h2>
+    <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-head" data-bs-parent="#iickcFAQ">
+      <div class="accordion-body">
+        Membership is open to:<br>
+        &bull; MSMEs, Startups, Corporates, and Industry Leaders<br>
+        &bull; Exporters & Importers<br>
+        &bull; Foreign Chambers, Trade Bodies, EPCs, and Associations<br>
+        &bull; Academia, Research Institutions & Knowledge Partners<br>
+        &bull; Professionals and Advisory Experts
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq4-head">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+        4. What are the benefits of becoming a member?
+      </button>
+    </h2>
+    <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4-head" data-bs-parent="#iickcFAQ">
+      <div class="accordion-body">
+        Members gain access to:<br>
+        &bull; Global networking opportunities<br>
+        &bull; B2B delegations, trade fairs, and business missions abroad<br>
+        &bull; Knowledge forums, webinars, and industry insights<br>
+        &bull; Policy advocacy & government liaison support<br>
+        &bull; Technology transfer and joint venture facilitation<br>
+        &bull; Recognition through IICKC events and publications
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq5-head">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+        5. Does IICKC support international collaborations?
+      </button>
+    </h2>
+    <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5-head" data-bs-parent="#iickcFAQ">
+      <div class="accordion-body">
+        Yes. IICKC actively promotes Joint Ventures (JVs), Technology Transfers, Investment Opportunities, and MoUs between Indian and overseas companies, Chambers of Commerce, and EPCs.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq6-head">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+        6. Is IICKC a government body?
+      </button>
+    </h2>
+    <div id="faq6" class="accordion-collapse collapse" aria-labelledby="faq6-head" data-bs-parent="#iickcFAQ">
+      <div class="accordion-body">
+        No, IICKC is an independent, non-profit Section 8 Company, recognized as a Chamber of Commerce. It collaborates with government bodies, trade promotion councils, and international organizations to facilitate business growth.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq7-head">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+        7. Where is IICKC headquartered?
+      </button>
+    </h2>
+    <div id="faq7" class="accordion-collapse collapse" aria-labelledby="faq7-head" data-bs-parent="#iickcFAQ">
+      <div class="accordion-body">
+        IICKC is headquartered in Pune, India, with plans to set up international chapters in Europe, Middle East, and Asia-Pacific.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq8-head">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+        8. How can I participate in IICKC delegations abroad?
+      </button>
+    </h2>
+    <div id="faq8" class="accordion-collapse collapse" aria-labelledby="faq8-head" data-bs-parent="#iickcFAQ">
+      <div class="accordion-body">
+        Members receive invitations to join business delegations, trade fairs, and exhibitions worldwide. Non-members may also apply, but members enjoy priority, discounted participation fees, and promotional advantages.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq9-head">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9">
+        9. What sectors does IICKC focus on?
+      </button>
+    </h2>
+    <div id="faq9" class="accordion-collapse collapse" aria-labelledby="faq9-head" data-bs-parent="#iickcFAQ">
+      <div class="accordion-body">
+        IICKC covers a wide range of sectors including:<br>
+        &bull; Engineering & Manufacturing<br>
+        &bull; Automotive & Auto-components<br>
+        &bull; Agriculture & Food Processing<br>
+        &bull; Information Technology & Digitalisation<br>
+        &bull; Renewable Energy & Sustainability<br>
+        &bull; Packaging & Logistics<br>
+        &bull; Education, Knowledge & Skill Development
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq10-head">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10" aria-expanded="false" aria-controls="faq10">
+        10. How can I join IICKC as a member?
+      </button>
+    </h2>
+    <div id="faq10" class="accordion-collapse collapse" aria-labelledby="faq10-head" data-bs-parent="#iickcFAQ">
+      <div class="accordion-body">
+        Interested individuals or companies can apply through:<br>
+        Email: <a href="mailto:info@iickc.com">info@iickc.com</a> or <a href="mailto:iickcindia@gmail.com">iickcindia@gmail.com</a><br>
+        Website: <a href="https://www.iickc.com" target="_blank">www.iickc.com</a><br>
+        Contact: +91 930970 3675
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="faq11-head">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11" aria-expanded="false" aria-controls="faq11">
+        11. Does IICKC offer Honorary or Advisory Membership?
+      </button>
+    </h2>
+    <div id="faq11" class="accordion-collapse collapse" aria-labelledby="faq11-head" data-bs-parent="#iickcFAQ">
+      <div class="accordion-body">
+        Yes. Distinguished personalities, subject experts, and global leaders may be invited as Honorary or Advisory Members, contributing to strategic guidance and thought leadership.
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <!-- Payment Instructions (Accordion) -->
