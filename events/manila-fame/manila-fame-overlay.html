@@ -645,7 +645,7 @@
         }
 
         /* Hide mobile text by default */
-        .mobile-text {
+        .mobile-text { 
             display: none;
         }
         /* Show desktop text by default */
@@ -658,6 +658,18 @@
             position: relative;
             transition: color 0.3s ease;
         }
+
+
+        /* When on screens 768px or less (typical mobile) */
+        @media only screen and (max-width: 768px) {
+        .mobile-text {
+            display: inline;
+        }
+        .desktop-text {
+            display: none;
+        }
+        }
+
 
         .highlight-international {
             color: #EFBF04; 
