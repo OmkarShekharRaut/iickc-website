@@ -135,6 +135,10 @@ header.header {
     width: 100%;
 }
 
+.nav-links li {
+    list-style: none;
+}
+
 /* Hero Section */
 section.hero {
     position: relative;
@@ -187,11 +191,39 @@ section.hero {
     padding: 1rem 3rem;
     border-radius: 60px;
     display: inline-block;
-    margin-top: 0rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
     font-weight: 600;
     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
+
+        /* Hide mobile text by default */
+        .mobile-text {
+            display: none;
+        }
+
+        /* Show desktop text by default */
+        .desktop-text {
+            display: inline;
+            text-decoration: none;
+            /* color: #333; */
+            font-weight: 500;
+            padding: 10px 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+
+        /* When on screens 768px or less (typical mobile) */
+        @media only screen and (max-width: 768px) {
+            .mobile-text {
+                display: inline;
+                font-weight: 500;
+            }
+
+            .desktop-text {
+                display: none;
+            }
+        }
 
 /* Sections */
 main {
@@ -306,7 +338,7 @@ section {
     scroll-margin-top: 110px;
 }
 
-/* Utility and overrides from test.css or unique enhancements */
+/* Utility and overrides */
 /* Example: Buttons */
 button.primary-btn {
     background-color: #ff6600;
@@ -323,39 +355,154 @@ button.primary-btn:hover {
     background-color: #e65500;
 }
 
-/* Responsive */
+/* Responsive Enhancements */
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.2rem;
-    }
+  /* Header adjustments */
+  .header-top .container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .header-contact {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .header-social {
+    justify-content: center;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .nav-links {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+  .nav-links a {
+    display: block;
+    padding: 10px 0;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  }
 
-    .hero p.subtitle {
-        font-size: 1.2rem;
-    }
+  /* Hero Section */
+  section.hero {
+    min-height: 400px;
+    padding: 2rem 1rem 3rem 1rem;
+    background-position: center center;
+  }
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .hero p.subtitle {
+    font-size: 1.1rem;
+  }
+  .hero .date-venue {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
 
-    .hero .date-venue {
-        font-size: 1.1rem;
-        padding: 1rem 2rem;
-    }
+  /* Main Content */
+  main {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  ul.benefits-list li {
+    font-size: 1rem;
+    padding-left: 1.2rem;
+  }
 
-    ul.benefits-list li {
-        font-size: 1rem;
-    }
+  /* Testimonials */
+  .testimonial {
+    font-size: 1rem;
+    padding: 15px 20px;
+    max-width: 100%;
+  }
 
-    .testimonial {
-        font-size: 1rem;
-        padding: 15px 20px;
-    }
+  /* Call To Action */
+  .cta-button {
+    padding: 12px 40px;
+    font-size: 1.1rem;
+  }
 
-    .cta-button {
-        padding: 12px 40px;
-        font-size: 1.1rem;
-    }
+  /* Images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 
-    main {
-        margin: 20px auto;
-        padding: 0 15px;
-    }
+  /* Hamburger Icon */
+#nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 30px;
+  position: relative;
+  z-index: 1010;
 }
 
-/* Additional minor fixes, resets, or animation classes can be added here as found in test.css */
+#nav-toggle .hamburger,
+#nav-toggle .hamburger::before,
+#nav-toggle .hamburger::after {
+  display: block;
+  background-color: #003366;
+  height: 4px;
+  border-radius: 2px;
+  position: absolute;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+#nav-toggle .hamburger {
+  top: 13px;
+}
+
+#nav-toggle .hamburger::before {
+  content: '';
+  top: -10px;
+}
+
+#nav-toggle .hamburger::after {
+  content: '';
+  top: 10px;
+}
+
+/* Responsive nav toggling */
+
+@media (max-width: 768px) {
+  #nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
+}

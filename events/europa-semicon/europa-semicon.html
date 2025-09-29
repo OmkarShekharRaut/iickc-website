@@ -14,7 +14,7 @@
   <!-- Custom CSS -->
   <!-- <link href="style.css" rel="stylesheet" />
   <link href="test.css" rel="stylesheet" /> -->
-  <link href="style.css" rel="stylesheet" />
+  <link href="combined.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -45,6 +45,10 @@
           <span class="desktop-text">India <span style="color:#ff6600;">International</span> Chamber Of Knowledge Commerce</span>
           <span class="mobile-text">I<span style="color:#ff6600;">I</span>CKC</span>
         </a>
+        <button id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="hamburger"></span>
+        </button>
+
         <ul class="nav-links no-margin">
           <li><a href="#why-attend">About</a></li>
           <li><a href="#benefits">Benefits</a></li>
@@ -158,6 +162,18 @@
       });
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', function () {
+      const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+      this.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('open');
+    });
+  });
+
 </script>
 
 </html>
