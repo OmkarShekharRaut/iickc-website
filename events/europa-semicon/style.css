@@ -485,6 +485,8 @@ button.primary-btn:hover {
 
 @media (max-width: 768px) {
   #nav-toggle {
+    z-index: 2000;
+    position: relative; /* Ensure stacking context */
     display: block;
   }
 
@@ -504,6 +506,7 @@ button.primary-btn:hover {
 
   .nav-links.open {
     display: flex;
+    z-index: 1000;
   }
 }
 }
